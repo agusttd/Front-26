@@ -1,0 +1,72 @@
+/* Estilo Vintage General */
+body {
+    background-color: #f4f1ea !important; /* Color crema/papel vintage */
+    color: #3e3e3e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Tipografía clásica para títulos */
+h1, h2, h3 {
+    font-family: 'Georgia', serif; 
+}
+
+/* Encabezado */
+.custom-header {
+    background-color: #425b55; /* Tu color elegido */
+    border-bottom: 5px solid #2e403c;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f4f1ea;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.custom-header h1 {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.custom-header h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #cfd8d6;
+}
+
+/* Estilos de Secciones */
+.section-title {
+    color: #425b55;
+    border-bottom: 2px solid rgba(66, 91, 85, 0.3);
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Listas Vintage */
+.vintage-list {
+    list-style-type: square;
+    color: #425b55; /* Los cuadritos toman este color */
+    padding-left: 20px;
+}
+
+.vintage-list li {
+    color: #3e3e3e; /* El texto se mantiene oscuro */
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+/* Pie de página */
+.custom-footer {
+    background-color: #2e403c; /* Un tono un poco más oscuro que el header */
+    border-top: 3px solid #1f2b28;
+}
+
+.custom-footer a:hover {
+    color: #cfd8d6 !important;
+    text-decoration: underline !important;
+}
