@@ -1,6 +1,6 @@
-/* Estilo Vintage General */
+/* Fondo general crema/vintage */
 body {
-    background-color: #f4f1ea !important; /* Color crema/papel vintage */
+    background-color: #eaddcf !important; 
     color: #3e3e3e;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -8,65 +8,93 @@ body {
     min-height: 100vh;
 }
 
-/* Tipografía clásica para títulos */
 h1, h2, h3 {
     font-family: 'Georgia', serif; 
 }
 
 /* Encabezado */
 .custom-header {
-    background-color: #425b55; /* Tu color elegido */
-    border-bottom: 5px solid #2e403c;
+    background-color: #425b55;
+    color: #fbf9f6;
+    border-bottom: 6px solid #2e403c;
 }
 
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #f4f1ea;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    /* Foto completamente cuadrada con borde grueso para mantener el orden */
+    border-radius: 0; 
+    border: 5px solid #fbf9f6;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.3);
 }
 
 .custom-header h1 {
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .custom-header h2 {
-    font-size: 1.5rem;
-    font-style: italic;
+    font-size: 1.3rem;
     color: #cfd8d6;
 }
 
-/* Estilos de Secciones */
-.section-title {
-    color: #425b55;
-    border-bottom: 2px solid rgba(66, 91, 85, 0.3);
-    padding-bottom: 8px;
-    margin-bottom: 15px;
+/* Ancho máximo para que no se estire demasiado en pantallas grandes */
+.custom-main {
+    max-width: 800px;
+    margin: 0 auto; 
+    padding-top: 30px;
 }
 
-/* Listas Vintage */
+/* --- LA CAJA CUADRADA / ESTRUCTURADA --- */
+.vintage-box {
+    background-color: #fbf9f6; /* Color papel claro para el interior de la caja */
+    border: 3px solid #425b55; /* Borde sólido usando tu color */
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    /* Sombras duras estilo retro/brutalista para marcar estructura */
+    box-shadow: 6px 6px 0px #425b55; 
+}
+
+/* Títulos dentro de las cajas */
+.section-title {
+    color: #425b55;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #425b55;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* Listas con guiones fieles al PDF */
 .vintage-list {
-    list-style-type: square;
-    color: #425b55; /* Los cuadritos toman este color */
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.vintage-list li::before {
+    content: "- ";
+    color: #425b55;
+    font-weight: bold;
 }
 
 .vintage-list li {
-    color: #3e3e3e; /* El texto se mantiene oscuro */
+    font-size: 1.1rem;
     margin-bottom: 10px;
-    font-size: 1.05rem;
 }
 
 /* Pie de página */
 .custom-footer {
-    background-color: #2e403c; /* Un tono un poco más oscuro que el header */
-    border-top: 3px solid #1f2b28;
+    background-color: #2e403c;
+    color: #fbf9f6;
+    border-top: 6px solid #1f2b28;
 }
 
-.custom-footer a:hover {
-    color: #cfd8d6 !important;
-    text-decoration: underline !important;
+.custom-footer p {
+    font-size: 1.1rem;
+    margin: 0;
+    text-align: center;
 }
