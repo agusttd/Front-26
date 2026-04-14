@@ -40,10 +40,10 @@ h1, h2, h3 {
     color: #cfd8d6;
 }
 
-/* Ancho máximo para que no se estire demasiado en pantallas grandes */
+/* Ancho máximo ampliado para dar espacio a las dos columnas */
 .custom-main {
-    max-width: 800px;
-    margin: 0 auto; 
+    max-width: 1100px; /* Antes estaba en 800px */
+    margin: 0 auto;
     padding-top: 30px;
 }
 
